@@ -1,0 +1,97 @@
+body {
+  background-color: #50CAF2;
+  background-image: linear-gradient(rgba(80,202,242,.9),rgba(80,202,242,.9)), url(../amj-pattern-02.png);
+  background-blend-mode: normal;
+}
+
+.top {
+  background-image: url(../waltonelementary024.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 75% center;
+  height: 500px;
+}
+
+.second {
+  .content {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+  h2 {
+    color: $color-secondary;
+  }
+  p {
+    color: white;
+  }
+
+}
+
+.third {
+  background-color: #F27924;
+  background-image: url(../amj-symbol.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media screen and (min-width: $break-md) {
+    background-size: 65%;
+    background-position: 115%;
+  }
+  .content {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+
+  h2 {
+    color: $color-tertiary;
+  }
+  p {
+    color: white;
+  }
+}
+
+.fourth {
+  background-color: $color-secondary;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  align-items: center;
+  div {
+      text-align: center;
+  }
+
+  h2, h4 {
+    color: $color-tertiary-alt;
+  }
+
+  h2 {
+    padding-bottom: 3rem;
+  }
+
+  p {
+    color: white;
+  }
+}
+
+.footer {
+  background-color: white;
+  flex-flow: column;
+
+  img {
+    width: 300px;
+  }
+
+  div {
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  p {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  }
+}

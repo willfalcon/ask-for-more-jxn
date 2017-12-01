@@ -1,0 +1,41 @@
+html {
+  font-size: 10px;
+}
+
+@mixin fontstack-regular {
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  @content;
+}
+
+@mixin fontstack-bold {
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  @content;
+}
+
+
+p {
+  @include fontstack-regular {
+    font-size: 1.6rem;
+    color: $color-primary;
+    line-height: 1.5;
+  }
+}
+
+h2 {
+  @include fontstack-bold {
+    font-size: 6.4rem;
+  }
+}
+
+h4 {
+  @include fontstack-bold {
+    font-size: 1.6rem;
+  }
+}
+.text-white {
+  color: white;
+}

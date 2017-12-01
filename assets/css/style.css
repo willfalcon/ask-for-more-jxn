@@ -1,0 +1,106 @@
+html {
+  font-size: 10px; }
+
+p {
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.6rem;
+  color: #49494B;
+  line-height: 1.5; }
+
+h2 {
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 6.4rem; }
+
+h4 {
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem; }
+
+.text-white {
+  color: white; }
+
+.box {
+  width: 461px;
+  max-width: 100%;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 0 3rem;
+  margin: 2rem 4rem;
+  display: flex;
+  flex-flow: column wrap; }
+
+body {
+  background-color: #50CAF2;
+  background-image: linear-gradient(rgba(80, 202, 242, 0.9), rgba(80, 202, 242, 0.9)), url(../amj-pattern-02.png);
+  background-blend-mode: normal; }
+
+.top {
+  background-image: url(../waltonelementary024.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 75% center;
+  height: 500px; }
+
+.second .content {
+  display: flex;
+  flex-flow: column;
+  justify-content: center; }
+.second h2 {
+  color: #B4428A; }
+.second p {
+  color: white; }
+
+.third {
+  background-color: #F27924;
+  background-image: url(../amj-symbol.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+  @media screen and (min-width: 768px) {
+    .third {
+      background-size: 65%;
+      background-position: 115%; } }
+  .third .content {
+    display: flex;
+    flex-flow: column;
+    justify-content: center; }
+  .third h2 {
+    color: #FBD76B; }
+  .third p {
+    color: white; }
+
+.fourth {
+  background-color: #B4428A;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  align-items: center; }
+  .fourth div {
+    text-align: center; }
+  .fourth h2, .fourth h4 {
+    color: #FBB855; }
+  .fourth h2 {
+    padding-bottom: 3rem; }
+  .fourth p {
+    color: white; }
+
+.footer {
+  background-color: white;
+  flex-flow: column; }
+  .footer img {
+    width: 300px; }
+  .footer div {
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto; }
+  .footer p {
+    font-size: 1.2rem;
+    line-height: 1.8rem; }
+
+/*# sourceMappingURL=style.css.map */
