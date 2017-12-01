@@ -103,6 +103,13 @@ body {
   .footer p {
     font-size: 1.2rem;
     line-height: 1.8rem; }
+  .footer .social {
+    flex-flow: row nowrap; }
+    .footer .social a {
+      margin: 1rem;
+      margin-bottom: 2.7rem; }
+    .footer .social i {
+      color: #49494B; }
 
 @media screen and (min-width: 768px) {
   .hide-right {

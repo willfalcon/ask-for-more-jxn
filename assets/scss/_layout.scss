@@ -95,4 +95,15 @@ body {
   font-size: 1.2rem;
   line-height: 1.8rem;
   }
+
+  .social {
+    flex-flow: row nowrap;
+    a {
+      margin: 1rem;
+      margin-bottom: 2.7rem;
+    }
+    i {
+      color: $color-primary;
+    }
+  }
 }
