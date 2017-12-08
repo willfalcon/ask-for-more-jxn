@@ -1,21 +1,24 @@
 @media screen and (min-width: $break-md) {
-  .hide-right {
-    transform: translateX(100%);
-  }
+  /* Only add these 'fun' classes if flexbox is supported. */
+  .flexbox {
+    .hide-right {
+      transform: translateX(100%);
+    }
 
-  .hide-left {
-    transform: translateX(-100%);
-  }
+    .hide-left {
+      transform: translateX(-100%);
+    }
 
-  .hide-opacity {
-    opacity: 0;
-  }
+    .hide-opacity {
+      opacity: 0;
+    }
 
-  .fade-in {
-    transition: opacity 1s;
-  }
+    .fade-in {
+      transition: opacity 1s;
+    }
 
-  .slide {
-    transition: transform 1s;
+    .slide {
+      transition: transform 1s;
+    }
   }
 }
