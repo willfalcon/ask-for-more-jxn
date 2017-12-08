@@ -39,6 +39,7 @@ h4 {
 
 body {
   background-color: #50CAF2;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(80, 202, 242, 0.9)), to(rgba(80, 202, 242, 0.9))), url(../amj-pattern-02.png);
   background-image: linear-gradient(rgba(80, 202, 242, 0.9), rgba(80, 202, 242, 0.9)), url(../amj-pattern-02.png);
   background-attachment: fixed;
   background-blend-mode: normal; }
@@ -51,9 +52,16 @@ body {
   height: 500px; }
 
 .second .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column;
-  justify-content: center; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 .second h2 {
   color: #B4428A; }
 .second p {
@@ -70,9 +78,16 @@ body {
       background-size: 65%;
       background-position: 115%; } }
   .third .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: column;
-    justify-content: center; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   .third h2 {
     color: #FBD76B; }
   .third p {
@@ -82,7 +97,9 @@ body {
   background-color: #B4428A;
   padding-top: 4rem;
   padding-bottom: 4rem;
-  align-items: center; }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
   .fourth div {
     text-align: center; }
   .fourth h2, .fourth h4 {
@@ -94,21 +111,33 @@ body {
 
 .footer {
   background-color: white;
-  flex-flow: column; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column; }
   .footer img {
     width: 300px; }
   .footer div {
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: column;
-    justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     margin-left: auto;
     margin-right: auto; }
   .footer p {
     font-size: 1.2rem;
     line-height: 1.8rem; }
   .footer .social {
-    flex-flow: row nowrap; }
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap; }
     .footer .social a {
       margin: 1rem;
       margin-bottom: 2.7rem; }
@@ -116,16 +145,32 @@ body {
       color: #49494B; }
 
 @media screen and (min-width: 768px) {
-  /* Only add these 'fun' classes if flexbox is supported. */
-  .flexbox .hide-right {
-    transform: translateX(100%); }
-  .flexbox .hide-left {
-    transform: translateX(-100%); }
-  .flexbox .hide-opacity {
-    opacity: 0; }
-  .flexbox .fade-in {
-    transition: opacity 1s; }
-  .flexbox .slide {
-    transition: transform 1s; } }
+  .hide-right {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%); }
 
-/*# sourceMappingURL=style.css.map */
+  .hide-left {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%); }
+
+  .hide-opacity {
+    opacity: 0; }
+
+  .fade-in {
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s; }
+
+  .slide {
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s; } }
+/* Undo these if matchmedia isn't supported. Mainly on IE9 where the script breaks on the first line. */
+.no-matchmedia .hide-right {
+  -webkit-transform: 0;
+          transform: 0; }
+.no-matchmedia .hide-left {
+  -webkit-transform: 0;
+          transform: 0; }
+.no-matchmedia .hide-opacity {
+  opacity: 1; }

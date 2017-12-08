@@ -1,24 +1,36 @@
 @media screen and (min-width: $break-md) {
-  /* Only add these 'fun' classes if flexbox is supported. */
-  .flexbox {
-    .hide-right {
-      transform: translateX(100%);
-    }
+  .hide-right {
+    transform: translateX(100%);
+  }
 
-    .hide-left {
-      transform: translateX(-100%);
-    }
+  .hide-left {
+    transform: translateX(-100%);
+  }
 
-    .hide-opacity {
-      opacity: 0;
-    }
+  .hide-opacity {
+    opacity: 0;
+  }
 
-    .fade-in {
-      transition: opacity 1s;
-    }
+  .fade-in {
+    transition: opacity 1s;
+  }
 
-    .slide {
-      transition: transform 1s;
-    }
+  .slide {
+    transition: transform 1s;
+  }
+}
+
+/* Undo these if matchmedia isn't supported. Mainly on IE9 where the script breaks on the first line. */
+.no-matchmedia {
+  .hide-right {
+    transform: 0;
+  }
+
+  .hide-left {
+    transform: 0;
+  }
+
+  .hide-opacity {
+    opacity: 1;
   }
 }
