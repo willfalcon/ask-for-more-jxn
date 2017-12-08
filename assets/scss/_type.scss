@@ -29,6 +29,9 @@ h2 {
   @include fontstack-bold {
     font-size: 6.4rem;
   }
+  @media screen and (max-width: 800px) {
+    font-size: 4.9rem;
+  }
 }
 
 h4 {
