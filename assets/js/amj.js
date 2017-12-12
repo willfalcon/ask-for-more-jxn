@@ -2,9 +2,9 @@
 $(document).ready(function() {
   $('.box').delay(100).removeClass('hide-opacity');
 
-  $('#2_1_content').delay(1600).removeClass('hide-right');
+  $('#2_1_content').delay(16000).removeClass('hide-right');
   console.log("Second row moved in");
-  $('#3_1_content').delay(2400).removeClass('hide-left');
+  $('#3_1_content').delay(24000).removeClass('hide-left');
   console.log("Third row moved in");
 
 
