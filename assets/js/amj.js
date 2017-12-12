@@ -1,4 +1,15 @@
-const mq = window.matchMedia( "(min-width: 768px)" );
+
+$(document).ready(function() {
+  $('.box').delay(100).removeClass('hide-opacity');
+
+  $('#2_1_content').delay(1600).removeClass('hide-right');
+  console.log("Second row moved in");
+  $('#3_1_content').delay(2400).removeClass('hide-left');
+  console.log("Third row moved in");
+
+
+});
+
 
 function thirdRow() {
   if ( $('#third_row').visible() ) {
@@ -25,19 +36,10 @@ function start() {
 
 }
 
+const mq = window.matchMedia( "(min-width: 768px)" );
+
 if (mq.matches) {
   $(document).ready(start);
   $(document).ready(thirdRow);
 
 }
-
-$(document).ready(function() {
-  $('.box').delay(100).removeClass('hide-opacity');
-
-  $('#2_1_content').delay(1600).removeClass('hide-right');
-  console.log("Second row moved in");
-  $('#3_1_content').delay(2400).removeClass('hide-left');
-  console.log("Third row moved in");
-
-
-});
